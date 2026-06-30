@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reshma Al - Cybersecurity Undergraduate, SOC Analyst Aspirant, and DFIR Enthusiast. Explore my projects, skills, certifications, and experience in cybersecurity.">
+  <meta name="keywords" content="Reshma Al, Cybersecurity, SOC Analyst, DFIR, Ethical Hacking, Digital Forensics, Portfolio, Chennai">
+  <meta name="author" content="Reshma Al">
+  <title>Reshma Al | Cybersecurity Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvas for Interactive Cyber-Grid -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Sticky Navbar -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i data-lucide="shield" class="glow-text"></i>
+        <span>RESHMA_AL</span>://
+      </a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certs-achievements" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-right">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-status glass-card badge">
+          <span class="status-dot"></span>
+          <span>Status: Open to Opportunities</span>
+        </div>
+        
+        <h1 class="hero-title gradient-text">
+          Hi, This is <br><span>Reshma Al</span>
+        </h1>
+        
+        <div class="hero-typing-container">
+          <span class="hero-typing" id="hero-typing" data-words='["Cybersecurity Undergraduate", "Security Enthusiast", "Ethical Hacking Aspirant", "CTF Player"]'></span>
+        </div>
+        
+        <p class="hero-desc">
+          Passionate about cybersecurity and driven by a curiosity to understand, secure, and strengthen digital systems. Continuously building practical expertise through hands-on projects, security research, Capture The Flag (CTF) challenges, and real-world cybersecurity labs.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="https://raw.githubusercontent.com/Reshma4816/Portfolio/main/Reshma_AL_Resume.pdf" target="_blank" class="btn btn-primary">
+            <i data-lucide="download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+
+      <div class="terminal" style="width:100%;max-width:2000px;height:500px;">
+
+        <div class="terminal-header">
+
+          <div class="terminal-dots">
+          <span class="terminal-dot close"></span>
+          <span class="terminal-dot minimize"></span>
+          <span class="terminal-dot maximize"></span>
+        </div>
+
+        <span class="terminal-title">
+        guest@reshma-al:/portfolio
+        </span>
+
+        <div class="badge badge-blue"
+            style="font-size:.7rem;padding:.2rem .6rem">
+
+            ONLINE
+
+        </div>
+
+      </div>
+
+      <div class="terminal-body"
+      id="main-terminal-body">
+
+
+        <!-- Terminal Output -->
+        <div id="main-terminal-output">
+
+          <div style="color: var(--accent-cyan);">
+            Welcome to the Interactive Terminal!
+          </div>
+
+          <div>
+            Type <span style="color: var(--accent-green);">help</span> to view available commands.
+          </div>
+
+          <br>
+
+        </div>
+
+        <!-- Prompt -->
+        <div class="terminal-prompt-container">
+
+          <span class="terminal-prompt-symbol">
+            guest@portfolio:~$
+          </span>
+
+          <input
+            type="text"
+            id="main-terminal-input"
+            class="terminal-input"
+            placeholder="Type help..."
+            autocomplete="off"
+            spellcheck="false">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-photo-wrapper glass-card">
+          <img src="https://res.cloudinary.com/dl5txbzrs/image/upload/f_auto,q_auto/ME_udwtvk" alt="Reshma Al" class="about-photo" loading="lazy">
+        </div>
+        
+        <div class="about-details">
+          <p>
+            I am a Cybersecurity undergraduate with a strong interest in understanding how technology works, how it can be secured, and how cyber threats can be effectively identified and mitigated. My journey combines a solid academic foundation in computer science with continuous hands-on learning through cybersecurity projects, Capture The Flag (CTF) challenges, security research, and practical lab environments.
+          </p>
+          <p>
+            I enjoy exploring different areas of cybersecurity, including Security Operations, Digital Forensics & Incident Response, Ethical Hacking, Network Security, and Security Automation. My practical exposure through cybersecurity internships, technical projects, CTF challenges, and security labs has strengthened my analytical thinking and reinforced the importance of approaching security with curiosity, discipline, and continuous improvement.
+          </p>
+          <p>
+            I am looking forward to contribute to meaningful cybersecurity projects and collaborative environments where I can apply my skills, embrace new challenges, and continuously grow as a cybersecurity professional while helping build secure and resilient digital ecosystems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Skills</h2>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skills-tabs">
+          <button class="skills-tab active" data-filter="all">All Skills</button>
+          <button class="skills-tab" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="skills-tab" data-filter="tools">Security Tools</button>
+          <button class="skills-tab" data-filter="programming">Programming & OS</button>
+          <button class="skills-tab" data-filter="softskills">Soft Skills</button>
+        </div>
+        
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills Cards (Loaded dynamically & static fallback) -->
+          
+          <!-- Cybersecurity Domain -->
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Security Operations (SOC)</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Log analysis, alert triage, incident classification, and monitoring operations.</p>
+          </div>
+          
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Digital Forensics & Incident Response (DFIR)</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Digital evidence collection, artifact investigation, and event reconstruction.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Threat Detection</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Analyzing indicators of compromise (IOCs) and mapping activities to MITRE ATT&CK.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Network Traffic Analysis</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Analyzing PCAP packet captures, isolating malicious streams, and analyzing protocols.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Vulnerability Assessment</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Scanning endpoints, identifying CVEs, assessing risks, and suggesting remediations.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">OSINT Investigation</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Information gathering, email tracing, domain reconnaissance, and intelligence gathering.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="cybersecurity">
+            <div class="skill-header">
+              <span class="skill-title">Security Monitoring</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Continuous analysis and correlation of logs and traffic to detect and respond to threats.</p>
+          </div>
+
+
+          <!-- Security Tools -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">Wireshark</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Packet filters, protocol decoding, security alert validation, and session reassembly.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">Splunk / SIEM</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Querying events, creating dashboards, correlating logs, and triaging security alarms.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">Nmap</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Port scanning, service enumeration, OS detection, and NSE script scans.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">Metasploit</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Firmware extraction, file carving, steganographic extraction, and static analysis.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">Git</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Local version control that tracks file changes and enables branching for parallel development.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-header">
+              <span class="skill-title">GitHub</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Cloud-based platform that hosts Git repositories, provides collaboration tools and pull requests.</p>
+          </div>
+
+
+          <!-- Programming & OS -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">Linux</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Terminal navigation, permission management, cron auditing, and process monitoring.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">Python</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Developing security scripts, log scrapers, socket communication, and automating analysis.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">C</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Low-level language vulnerable to buffer overflows, used for writing high-performance exploits.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">Java</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Memory-safe language targeted via deserialization flaws and third-party dependency vulnerabilities.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">Bash scripting</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Automating terminal routines, file processing, and command line chaining.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-title">Windows Auditing</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Analyzing Event Viewer logs, registry analysis, and active directory concepts.</p>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Problem Solving</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Logical thinking under pressure, root cause investigation, and payload debugging.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Leadership</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Leading hackathon squads, managing CTF operations, and coordinating presentations.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Teamwork</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Collaborating with team members to maximize efficiency during high-pressure competitions.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Communication</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Articulating technical findings clearly to ensure seamless integration and alignment.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Analytical Thinking</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Evaluating system logs to identify vulnerabilities and engineer effective solutions.</p>
+          </div>
+
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-title">Time Management</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">Prioritizing critical vulnerabilities to successfully meet the competitive deadline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2> Featured Projects</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-details">
+            <div class="badge badge-purple" style="align-self: flex-start;">
+              <i data-lucide="star" style="width: 10px; height: 10px;"></i> Featured Project
+            </div>
+            <h3 class="project-title">AquaHarvest Pro</h3>
+            <p class="project-desc">
+              An intelligent rainwater harvesting management platform that combines cloud logging databases, real-time analytics dashboards, and interactive AR visual representations.
+            </p>
+            
+            <ul class="project-features">
+              <li>Real-time sensor graphs</li>
+              <li>pH and rainfall metrics</li>
+              <li>Predictive analytics insights</li>
+              <li>3D rooftop rendering</li>
+              <li>Supabase secure RLS</li>
+              <li>Fully responsive UI</li>
+            </ul>
+            
+            <div class="project-tech">
+              <span>Next.js 15</span>
+              <span>React 18</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>Supabase</span>
+              <span>Three.js</span>
+              <span>PostgreSQL</span>
+            </div>
+    
+          </div>
+          
+          <div class="project-visual">
+            <div class="project-visual-preview">
+              <div class="preview-header">
+                <div class="preview-dots">
+                  <span class="preview-dot"></span>
+                  <span class="preview-dot"></span>
+                  <span class="preview-dot"></span>
+                </div>
+                <div class="preview-address">aquaharvest-pro.dev</div>
+                <i data-lucide="lock" style="width: 10px; height: 10px; color: var(--accent-cyan)"></i>
+              </div>
+              <div class="preview-body">
+                <div class="preview-grid-node">
+                  <span>pH Level: 7.2 (Neutral)</span>
+                  <span style="color: var(--accent-green)">● SAFE</span>
+                </div>
+                <div class="preview-grid-node">
+                  <span>Water Volume: 4,820 L</span>
+                  <span style="color: var(--accent-cyan)">● 82%</span>
+                </div>
+                <div class="preview-grid-node">
+                  <span>Rain Rate: 12 mm/hr</span>
+                  <span style="color: var(--accent-blue)">● MONITORING</span>
+                </div>
+                
+                <div style="font-size: 0.55rem; font-family: var(--font-mono); text-align: center; color: var(--text-muted);">
+                  [ RLS Policy Enabled // SSL Secure ]
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+<section id="experience" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Professional Experience</h2>
+    </div>
+
+    <div style="display: flex; gap: 2rem; justify-content: center; align-items: stretch; flex-wrap: wrap; margin-top: 3rem;">
+
+      <!-- Cybercrime Wing -->
+      <div class="timeline-card glass-card" style="flex: 1; min-width: 350px; max-width: 550px;">
+
+        <span class="timeline-date">JUNE 2026 – JULY 2026</span>
+
+        <h3 class="timeline-role">Cybercrime Intern</h3>
+
+        <h4 class="timeline-company">
+          Cybercrime Wing, Tambaram Commissionerate
+        </h4>
+
+        <ul class="timeline-bullets">
+          <li>Assisted officers in digital evidence collection, storage, and forensic integrity analysis.</li>
+          <li>Studied cyber laws (IT Act), cybercrime classification, and investigation workflows.</li>
+          <li>Gained practical exposure to investigations involving phishing, cyber fraud, identity theft, and online financial crimes.</li>
+          <li>Received appreciation from the Assistant Deputy Commissioner of Police for contributing to a confidential investigation.</li>
+        </ul>
+
+      </div>
+
+      <!-- InternPe -->
+      <div class="timeline-card glass-card" style="flex: 1; min-width: 350px; max-width: 550px;">
+
+        <span class="timeline-date">JANUARY 2025 – FEBRUARY 2025</span>
+
+        <h3 class="timeline-role">Cybersecurity Intern</h3>
+
+        <h4 class="timeline-company">
+          InternPe
+        </h4>
+
+        <ul class="timeline-bullets">
+          <li>Performed packet analysis and network traffic monitoring using Wireshark.</li>
+          <li>Conducted network reconnaissance and host discovery using Nmap.</li>
+          <li>Practiced vulnerability assessment within controlled Metasploitable lab environments.</li>
+          <li>Strengthened practical knowledge of cybersecurity fundamentals, networking, and security analysis techniques.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- Certifications & Achievements Section -->
+  <section id="certs-achievements" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="certs-achievements-container">
+        
+        <!-- Certifications -->
+        <div>
+          <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+            <h2>Certifications</h2>
+            <p>Verified industry credentials and training completions.</p>
+          </div>
+          
+          <div class="certs-grid">
+            <div class="cert-card glass-card">
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+              <div class="cert-info">
+                <h3>TryHackMe – Pre Security</h3>
+                <p>Virtual Hands-on Network Security & Foundations</p>
+              </div>
+            </div>
+            
+            <div class="cert-card glass-card">
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+              <div class="cert-info">
+                <h3>LetsDefend – SOC Member</h3>
+                <p>Blue Team Operations & Security Analysis Training</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card">
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+              <div class="cert-info">
+                <h3>Tata Cybersecurity Analyst</h3>
+                <p>Forage simulation covering Threat Identification & Incident Response</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card">
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+              <div class="cert-info">
+                <h3>Skill India – IT Forensic Analyst</h3>
+                <p>Government credential certifying digital forensics capabilities</p>
+              </div>
+            </div>
+
+            <div class="cert-card glass-card">
+              <div class="cert-icon"><i data-lucide="shield-check"></i></div>
+              <div class="cert-info">
+                <h3>Infosys Springboard – Python Basics</h3>
+                <p>Software programming fundamentals and scripts parsing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Achievements -->
+        <div>
+          <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+            <h2>Achievements</h2>
+            <p>Highlights of my hackathon wins and capture the flag contests.</p>
+          </div>
+          
+          <div class="achievements-grid">
+            <div class="ach-card glass-card" style="border-top: 3px solid #fbbf24">
+              <div class="ach-header">
+                <span class="ach-icon">🥇</span>
+                <span class="badge badge-green" style="background: rgba(251, 191, 36, 0.08); border-color: rgba(251, 191, 36, 0.2); color: #fbbf24">1st Place</span>
+              </div>
+              <div class="ach-body">
+                <h3>EcoNova Hackathon</h3>
+                <p>Won first place by designing and pitching an eco-friendly automated sustainability system.</p>
+              </div>
+            </div>
+            
+            <div class="ach-card glass-card" style="border-top: 3px solid var(--accent-cyan)">
+              <div class="ach-header">
+                <span class="ach-icon">🏆</span>
+                <span class="badge" style="background: rgba(0, 240, 255, 0.08); border-color: rgba(0, 240, 255, 0.2); color: var(--accent-cyan)">Top 20</span>
+              </div>
+              <div class="ach-body">
+                <h3>Gaultnet CTF</h3>
+                <p>Ranked in the top 20 at Netrunner's Gaultnet CTF out of hundreds of cybersecurity competitors.</p>
+              </div>
+            </div>
+
+            <div class="ach-card glass-card" style="border-top: 3px solid var(--accent-blue)">
+              <div class="ach-header">
+                <span class="ach-icon">🏅</span>
+                <span class="badge badge-blue" style="background: rgba(59, 130, 246, 0.08); border-color: rgba(59, 130, 246, 0.2); color: var(--accent-blue)">6th Place</span>
+              </div>
+              <div class="ach-body">
+                <h3>XploitX CTF</h3>
+                <p>Secured 6th place overall through active exploit parsing, network pcap forensics, and steganography tasks.</p>
+              </div>
+            </div>
+
+            <div class="ach-card glass-card" style="border-top: 3px solid var(--accent-purple)">
+              <div class="ach-header">
+                <span class="ach-icon">🏅</span>
+                <span class="badge badge-purple" style="background: rgba(139, 92, 246, 0.08); border-color: rgba(139, 92, 246, 0.2); color: var(--accent-purple)">Top 35</span>
+              </div>
+              <div class="ach-body">
+                <h3>root@localhost CTF</h3>
+                <p>Placed in the Top 35 during the root@localhost hacking contest solving forensics and linux operations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's discuss on open opportunities or collaborate on meaningful projects and research.</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-header">
+            <h3>Contact Details</h3>
+            <p>Reach out through direct paths or connect on academic platforms.</p>
+          </div>
+          
+          <div class="contact-details">
+            <a href="mailto:reshmaalagesan@gmail.com" class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-item-text">
+                <span>Email</span>
+                <p>reshmaalagesan@gmail.com</p>
+                <p>reshma.al.2024.csecs@rajalakshmi.edu.in</p>
+              </div>
+            </a>
+            
+            <a href="tel:+919884453399" class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-item-text">
+                <span>Phone</span>
+                <p>+91 9884453399</p>
+              </div>
+            </a>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-item-text">
+                <span>Location</span>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Recruiter CTA Buttons -->
+          <div class="contact-cta-buttons">
+            <a href="https://raw.githubusercontent.com/Reshma4816/Portfolio/main/Reshma_AL_Resume.pdf" target="_blank" class="btn btn-primary">
+              <i data-lucide="file-text"></i> Download Resume
+            </a>
+            <a href="https://www.linkedin.com/in/reshma-alagesan-030049332" target="_blank" class="btn btn-secondary">
+              <i data-lucide="linkedin"></i> Connect LinkedIn
+            </a>
+            <a href="https://github.com/Reshma4816" target="_blank" class="btn btn-muted">
+              <i data-lucide="github"></i> View GitHub
+            </a>
+            <a href="https://tryhackme.com/p/Reshmaalagesan" target="_blank" class="btn btn-muted">
+              <i data-lucide="terminal"></i> TryHackMe Profile
+            </a>
+          </div>
+        </div>
+        
+        <!-- Contact Form Card -->
+        <div class="contact-form-card glass-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name">guest@reshma-al:~$ echo $NAME</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">guest@reshma-al:~$ echo $EMAIL</label>
+              <input type="email" id="form-email" class="form-input" placeholder="your.email@domain.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-subject">guest@reshma-al:~$ echo $SUBJECT</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Inquiry / Invitation" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message">guest@reshma-al:~$ cat &lt;&lt;EOF</label>
+              <textarea id="form-message" class="form-input" placeholder="Type your message here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem">
+              <i data-lucide="send"></i> Send Transmission
+            </button>
+            
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="logo">
+          <i data-lucide="shield" style="color: var(--accent-cyan);"></i>
+          <span>RESHMA_AL</span>
+        </a>
+        
+        <div class="footer-status">
+          <span class="footer-status-label">Environment Status:</span>
+          <span class="footer-status-value">
+            <i data-lucide="check-circle" style="width: 14px; height: 14px; stroke-width: 3px;"></i> SECURE SYSTEM OK
+          </span>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Reshma Al. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Reshma4816" target="_blank" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/reshma-alagesan-030049332" target="_blank" class="footer-link">LinkedIn</a>
+          <a href="https://tryhackme.com/p/Reshmaalagesan" target="_blank" class="footer-link">TryHackMe</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom Application Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
