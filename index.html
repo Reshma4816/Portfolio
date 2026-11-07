@@ -378,79 +378,97 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2> Featured Projects</h2>
-      </div>
-      
-      <div class="projects-grid">
-        <div class="project-card glass-card">
-          <div class="project-details">
-            <div class="badge badge-purple" style="align-self: flex-start;">
-              <i data-lucide="star" style="width: 10px; height: 10px;"></i> Featured Project
-            </div>
-            <h3 class="project-title">AquaHarvest Pro</h3>
-            <p class="project-desc">
-              An intelligent rainwater harvesting management platform that combines cloud logging databases, real-time analytics dashboards, and interactive AR visual representations.
-            </p>
-            
-            <ul class="project-features">
-              <li>Real-time sensor graphs</li>
-              <li>pH and rainfall metrics</li>
-              <li>Predictive analytics insights</li>
-              <li>3D rooftop rendering</li>
-              <li>Supabase secure RLS</li>
-              <li>Fully responsive UI</li>
-            </ul>
-            
-            <div class="project-tech">
-              <span>Next.js 15</span>
-              <span>React 18</span>
-              <span>TypeScript</span>
-              <span>Tailwind CSS</span>
-              <span>Supabase</span>
-              <span>Three.js</span>
-              <span>PostgreSQL</span>
-            </div>
-    
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card glass-card">
+        <div class="project-details">
+          <div class="badge badge-purple" style="align-self: flex-start;">
+            <i data-lucide="star" style="width: 10px; height: 10px;"></i> Featured Project
           </div>
-          
-          <div class="project-visual">
-            <div class="project-visual-preview">
-              <div class="preview-header">
-                <div class="preview-dots">
-                  <span class="preview-dot"></span>
-                  <span class="preview-dot"></span>
-                  <span class="preview-dot"></span>
-                </div>
-                <div class="preview-address">aquaharvest-pro.dev</div>
-                <i data-lucide="lock" style="width: 10px; height: 10px; color: var(--accent-cyan)"></i>
+
+          <h3 class="project-title">ATLAS</h3>
+
+          <p class="project-desc">
+            An AI-driven cybersecurity assessment platform that integrates vulnerability assessment,
+            threat intelligence, business context, risk prioritization, and dynamic attack-path visualization
+            to streamline security analysis and remediation.
+          </p>
+
+          <ul class="project-features">
+            <li>Automated Vulnerability Assessment</li>
+            <li>Nmap, OWASP ZAP, OpenVAS & OpenSCAP</li>
+            <li>AI-assisted Penetration Testing</li>
+            <li>Approval-controlled security testing</li>
+            <li>Dynamic Attack Graph & Path Analysis</li>
+            <li>Risk-based Remediation Prioritization</li>
+          </ul>
+
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+            <span>AI/LLM</span>
+            <span>Security Automation</span>
+          </div>
+
+          <div style="margin-top: 1.2rem;">
+            <a href="https://github.com/Reshma4816/ATLAS"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="project-link">
+              <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+              View GitHub Repository
+            </a>
+          </div>
+
+        </div>
+
+        <div class="project-visual">
+          <div class="project-visual-preview">
+            <div class="preview-header">
+              <div class="preview-dots">
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
+                <span class="preview-dot"></span>
               </div>
-              <div class="preview-body">
-                <div class="preview-grid-node">
-                  <span>pH Level: 7.2 (Neutral)</span>
-                  <span style="color: var(--accent-green)">● SAFE</span>
-                </div>
-                <div class="preview-grid-node">
-                  <span>Water Volume: 4,820 L</span>
-                  <span style="color: var(--accent-cyan)">● 82%</span>
-                </div>
-                <div class="preview-grid-node">
-                  <span>Rain Rate: 12 mm/hr</span>
-                  <span style="color: var(--accent-blue)">● MONITORING</span>
-                </div>
-                
-                <div style="font-size: 0.55rem; font-family: var(--font-mono); text-align: center; color: var(--text-muted);">
-                  [ RLS Policy Enabled // SSL Secure ]
-                </div>
+              <div class="preview-address">atlas.security-platform</div>
+              <i data-lucide="shield-check"
+                 style="width: 10px; height: 10px; color: var(--accent-cyan)"></i>
+            </div>
+
+            <div class="preview-body">
+              <div class="preview-grid-node">
+                <span>Vulnerability Assessment</span>
+                <span style="color: var(--accent-green)">● ACTIVE</span>
+              </div>
+
+              <div class="preview-grid-node">
+                <span>Risk Analysis</span>
+                <span style="color: var(--accent-cyan)">● ANALYZING</span>
+              </div>
+
+              <div class="preview-grid-node">
+                <span>Attack Path Analysis</span>
+                <span style="color: var(--accent-blue)">● MAPPED</span>
+              </div>
+
+              <div style="font-size: 0.55rem; font-family: var(--font-mono); text-align: center; color: var(--text-muted);">
+                [ Security Assessment // Risk Prioritization ]
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Experience Section -->
 <section id="experience" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
@@ -485,19 +503,19 @@
       <!-- InternPe -->
       <div class="timeline-card glass-card" style="flex: 1; min-width: 350px; max-width: 550px;">
 
-        <span class="timeline-date">JANUARY 2025 – FEBRUARY 2025</span>
+        <span class="timeline-date">JULY 2026 – AUGUST 2026</span>
 
-        <h3 class="timeline-role">Cybersecurity Intern</h3>
+        <h3 class="timeline-role">Infosec Intern</h3>
 
         <h4 class="timeline-company">
-          InternPe
+          TVS Supply Chain Solutions
         </h4>
 
         <ul class="timeline-bullets">
-          <li>Performed packet analysis and network traffic monitoring using Wireshark.</li>
-          <li>Conducted network reconnaissance and host discovery using Nmap.</li>
-          <li>Practiced vulnerability assessment within controlled Metasploitable lab environments.</li>
-          <li>Strengthened practical knowledge of cybersecurity fundamentals, networking, and security analysis techniques.</li>
+          <li>Learned enterprise cybersecurity practices, including GRC, security audits, and risk assessment.</li>
+          <li>Gained hands-on exposure to vulnerability assessment using Nmap, OpenVAS, OWASP ZAP, and OpenSCAP.</li>
+          <li>Understood threat intelligence, PII protection, compliance, and security awareness.</li>
+          <li>Developed practical experience in AI-assisted security automation and cybersecurity platform development through ATLAS.</li>
         </ul>
 
       </div>
@@ -584,7 +602,7 @@
             <div class="ach-card glass-card" style="border-top: 3px solid var(--accent-cyan)">
               <div class="ach-header">
                 <span class="ach-icon">🏆</span>
-                <span class="badge" style="background: rgba(0, 240, 255, 0.08); border-color: rgba(0, 240, 255, 0.2); color: var(--accent-cyan)">Top 20</span>
+                <span class="badge" style="background: rgba(0, 240, 255, 0.08); border-color: rgba(0, 240, 255, 0.2); color: var(--accent-cyan)">2nd Place</span>
               </div>
               <div class="ach-body">
                 <h3>CyberShield CTF</h3>
@@ -606,7 +624,7 @@
             <div class="ach-card glass-card" style="border-top: 3px solid var(--accent-purple)">
               <div class="ach-header">
                 <span class="ach-icon">🏅</span>
-                <span class="badge badge-purple" style="background: rgba(139, 92, 246, 0.08); border-color: rgba(139, 92, 246, 0.2); color: var(--accent-purple)">Top 35</span>
+                <span class="badge badge-purple" style="background: rgba(139, 92, 246, 0.08); border-color: rgba(139, 92, 246, 0.2); color: var(--accent-purple)">Top 20</span>
               </div>
               <div class="ach-body">
                 <h3>H7CTF</h3>
